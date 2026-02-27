@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://recursive-forge.github.io/open-research-memory/schemas/memory-record.schema.json",
+  "title": "Open Research Memory Record Metadata",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "type": {
+      "type": "string",
+      "enum": ["episode", "procedure", "insight"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "reviewed", "verified", "trusted", "deprecated", "conflicted", "active"]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "human_verified": {
+      "type": "boolean"
+    },
+    "source_run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "status",
+    "title",
+    "tags",
+    "created_at",
+    "updated_at",
+    "confidence",
+    "human_verified",
+    "source_run_id",
+    "schema_version"
+  ]
+}
+
