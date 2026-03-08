@@ -4,6 +4,8 @@ Open Research Memory is a shared repository for reusable AI R&D experience recor
 
 The goal is to accumulate evidence-backed memory that other contributors can apply safely across projects.
 
+This repository is intended to be used as a read-only shared retrieval source during active runs and as a reviewed export target after task completion.
+
 ## Scope
 
 This repository accepts:
@@ -110,4 +112,3 @@ A record is mergeable only when it is:
 ## Schema
 
 See [`schemas/memory-record.schema.json`](schemas/memory-record.schema.json) for the machine-readable schema.
-
