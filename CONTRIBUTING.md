@@ -5,6 +5,7 @@
 1. Create a feature branch from `main`.
 2. Keep one logical topic per pull request.
 3. Do not push directly to `main`.
+4. Sync your local checkout before preparing an export branch so dedupe/conflict checks run against the latest `main`.
 
 ## What to Contribute
 
@@ -45,4 +46,3 @@ If you modify record schema:
 1. Update `schemas/memory-record.schema.json`.
 2. Explain migration impact in the PR description.
 3. Keep backward compatibility when possible.
-

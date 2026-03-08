@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://recursive-forge.github.io/open-research-memory/schemas/memory-record.schema.json",
+  "$id": "https://tenureai.github.io/open-research-memory/schemas/memory-record.schema.json",
   "title": "Open Research Memory Record Metadata",
   "type": "object",
   "additionalProperties": true,
@@ -68,4 +68,3 @@
     "schema_version"
   ]
 }
-
